@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=UBMP4.c Intro-1-Input-Ouput.c
+SOURCEFILES_QUOTED_IF_SPACED=UBMP4.c Neon-Pixel-Lighting.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/UBMP4.p1 ${OBJECTDIR}/Intro-1-Input-Ouput.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/UBMP4.p1.d ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/UBMP4.p1 ${OBJECTDIR}/Neon-Pixel-Lighting.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/UBMP4.p1.d ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/UBMP4.p1 ${OBJECTDIR}/Intro-1-Input-Ouput.p1
+OBJECTFILES=${OBJECTDIR}/UBMP4.p1 ${OBJECTDIR}/Neon-Pixel-Lighting.p1
 
 # Source Files
-SOURCEFILES=UBMP4.c Intro-1-Input-Ouput.c
+SOURCEFILES=UBMP4.c Neon-Pixel-Lighting.c
 
 
 
@@ -102,13 +102,13 @@ ${OBJECTDIR}/UBMP4.p1: UBMP4.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/UBMP4.d ${OBJECTDIR}/UBMP4.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/UBMP4.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/Intro-1-Input-Ouput.p1: Intro-1-Input-Ouput.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/Neon-Pixel-Lighting.p1: Neon-Pixel-Lighting.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d 
-	@${RM} ${OBJECTDIR}/Intro-1-Input-Ouput.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -mrom=default,-0-07FF -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -mext=cci -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=800  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Intro-1-Input-Ouput.p1 Intro-1-Input-Ouput.c 
-	@-${MV} ${OBJECTDIR}/Intro-1-Input-Ouput.d ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	@${RM} ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d 
+	@${RM} ${OBJECTDIR}/Neon-Pixel-Lighting.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -mrom=default,-0-07FF -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -mext=cci -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=800  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Neon-Pixel-Lighting.p1 Neon-Pixel-Lighting.c 
+	@-${MV} ${OBJECTDIR}/Neon-Pixel-Lighting.d ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/UBMP4.p1: UBMP4.c  nbproject/Makefile-${CND_CONF}.mk 
@@ -119,13 +119,13 @@ ${OBJECTDIR}/UBMP4.p1: UBMP4.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/UBMP4.d ${OBJECTDIR}/UBMP4.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/UBMP4.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/Intro-1-Input-Ouput.p1: Intro-1-Input-Ouput.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/Neon-Pixel-Lighting.p1: Neon-Pixel-Lighting.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d 
-	@${RM} ${OBJECTDIR}/Intro-1-Input-Ouput.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -mrom=default,-0-07FF -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -mext=cci -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=800  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Intro-1-Input-Ouput.p1 Intro-1-Input-Ouput.c 
-	@-${MV} ${OBJECTDIR}/Intro-1-Input-Ouput.d ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/Intro-1-Input-Ouput.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	@${RM} ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d 
+	@${RM} ${OBJECTDIR}/Neon-Pixel-Lighting.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -mrom=default,-0-07FF -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -mext=cci -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=800  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Neon-Pixel-Lighting.p1 Neon-Pixel-Lighting.c 
+	@-${MV} ${OBJECTDIR}/Neon-Pixel-Lighting.d ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/Neon-Pixel-Lighting.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
