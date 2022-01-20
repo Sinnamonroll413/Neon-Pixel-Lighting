@@ -1,6 +1,6 @@
 /*==============================================================================
  Project: NeoPixel-Starter
- Date:    January 19, 2022
+ Date: January 19, 2022
  
  This program demonstrates basic NeoPixel data transmission.
 ==============================================================================*/
