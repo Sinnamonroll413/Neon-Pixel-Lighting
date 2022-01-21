@@ -55,9 +55,10 @@ int main(void)
 	{
         neopixel_fill(LEDs);
         __delay_ms(20);
-
-        
-        
+        neopixel_fill(LEDs)
+        __delay_ms(20)
+        neopixel_fill(LEDs)
+        __delay_ms(20)
         // Activate bootloader if SW1 is pressed.
         if(SW1 == 0)
         {
