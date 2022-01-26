@@ -18,9 +18,12 @@
 const unsigned char LEDs = 40;
 
 // Program variable definitions
-unsigned char red = 0xAA;
-unsigned char green = 15;
-unsigned char blue = 64;
+unsigned char red = 10;
+unsigned char green = 10;
+unsigned char blue = 10;
+bool red_up = true;
+bool green_up = true;
+bool blue_up = true ;
 
 void neopixel_shift(unsigned char col)
 {
@@ -53,13 +56,90 @@ int main(void)
 	
     while(1)
 	{
+        if(SW3 == 0)
+        {
+            if(red_up == true)
+            {
+                if(red < 255)
+                {
+                    red++;
+                }
+                else
+                {
+                    red_up = false;
+                }
+            }
+            else
+            {
+                if(red > 0)
+                {
+                    red --;
+                }
+                else
+                {
+                    red_up = true;
+                }
+            }
+        }  
+
+
+        if(SW4 == 0)
+        {
+            if(green_up == true)
+            {
+                if(green < 255)
+                {
+                    green++;
+                }
+                else
+                {
+                    green_up = false;
+                }
+            }
+            else
+            {
+                if(green > 0)
+                {
+                    green --;
+                }
+                else
+                green_up = true;
+            }
+        }  
+
+
+        if(SW5 == 0)
+        {
+            if(blue_up == true)
+            {
+                if(blue < 255)
+                {
+                    blue++;
+                }
+                else
+                {
+                    blue_up = false;
+                }
+            }
+            else
+            {
+                if(blue > 0)
+                {
+                    blue --;
+                }
+                else
+
+                blue_up = true;
+            }
+        }  
+        
+        if(SW2 == 0)
+        {
+          
+        }
         neopixel_fill(LEDs);
         __delay_ms(20);
-        neopixel_fill(LEDs)
-        __delay_ms(20)
-        neopixel_fill(LEDs)
-        __delay_ms(20)
-        
+
         // Activate bootloader if SW1 is pressed.
         if(SW1 == 0)
         {
