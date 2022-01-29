@@ -1,9 +1,7 @@
 /*==============================================================================
  Project: NeoPixel-Starter
- Date: January 19, 2022
- 
- This program demonstrates basic NeoPixel data transmission.
-==============================================================================*/
+ Date: January 27, 2022
+ ==============================================================================*/
 
 #include    "xc.h"              // Microchip XC8 compiler include file
 #include    "stdint.h"          // Include integer definitions
@@ -29,6 +27,16 @@ unsigned char blue_index = 10;
 bool red_up = true;             // Colour adjustment direction variables
 bool green_up = true;
 bool blue_up = true;
+
+//Program Modes
+#define off 0
+#define on 1
+#define rainbow 2
+#define red 3
+#define breathing 4
+#define colour 5
+
+unsigned char mode = off
 
 // Gamma 1.8 colour output look-up table
 const char gamma[256] = {
@@ -101,6 +109,22 @@ int main(void)
     
     while(1)
     {
+        while(mode = off)
+        {
+            red_backup = red;
+            red = 0;
+            green_backup = green;
+            green = 0;
+            blue_backup = blue;
+            blue = 0;
+
+            neonpixel_fill(LEDs);
+            __delay_ms(20);
+            while(SW2 ++ 0);
+            red = red_backup;
+            mode = colour;
+        }
+        while(mode = colour)
         if(SW3 == 0)            // Adjust red index value
         {
             if(red_up == true)
@@ -178,6 +202,13 @@ int main(void)
                 }
             }
         }
+        If(SW2 == 0)
+        {
+            mode = breathing
+            while(SW2 == 0)
+        }
+
+
         
         // Gamma adjust output colours
         red = gamma[red_index];
